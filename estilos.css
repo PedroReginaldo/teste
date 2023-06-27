@@ -1,0 +1,64 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #7A07F6, #0D2FD6);
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  #gerar-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    margin-top: 20px;
+  }
+  
+  #mensagem {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  #resultado {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .bolha {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: subir 5s ease-in infinite;
+  }
+  
+  .imagem {
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+  }
+
+  @keyframes subir {
+    0% { bottom: -20px; opacity: 1; }
+    100% { bottom: 100%; opacity: 0; }
+  }
